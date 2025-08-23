@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChuckFunctionApp", "ChuckFunctionApp\ChuckFunctionApp.csproj", "{CAD96406-84FA-47D4-ADD3-9DB341449038}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokesUnitTests", "JokesUnitTests\JokesUnitTests.csproj", "{E1CFE7DB-220E-42D1-8C4E-F0BE170F5D28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAD96406-84FA-47D4-ADD3-9DB341449038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAD96406-84FA-47D4-ADD3-9DB341449038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAD96406-84FA-47D4-ADD3-9DB341449038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAD96406-84FA-47D4-ADD3-9DB341449038}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1CFE7DB-220E-42D1-8C4E-F0BE170F5D28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1CFE7DB-220E-42D1-8C4E-F0BE170F5D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1CFE7DB-220E-42D1-8C4E-F0BE170F5D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1CFE7DB-220E-42D1-8C4E-F0BE170F5D28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CBA03DBC-1D25-4F0B-A6CB-98FFBB7CA151}
+	EndGlobalSection
+EndGlobal
