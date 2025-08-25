@@ -8,9 +8,9 @@ public class JokesFunction
 {
     private readonly IJokesCollector _service;
     private readonly ILogger<JokesFunction> _logger;
-    private readonly IngestionOptions _options;
+    private readonly ConfigOptions _options;
 
-    public JokesFunction(IJokesCollector service, ILogger<JokesFunction> logger, IOptions<IngestionOptions> options)
+    public JokesFunction(IJokesCollector service, ILogger<JokesFunction> logger, IOptions<ConfigOptions> options)
     {
         _service = service;
         _logger = logger;

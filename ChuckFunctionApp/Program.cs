@@ -22,7 +22,7 @@ var host = new HostBuilder()
     {
         var cfg = ctx.Configuration;
         
-        services.Configure<IngestionOptions>(ctx.Configuration.GetSection("Ingestion"));
+        services.Configure<ConfigOptions>(ctx.Configuration.GetSection("Ingestion"));
 
         // HttpClient з Polly (retry + timeout)
         services.AddHttpClient("Chuck", client =>
@@ -59,7 +59,7 @@ var host = new HostBuilder()
     })
     .Build();
 
-// Ініціалізація БД (створення таблиць/індексів)
+// Database initialization - create table and constraint
 using (var scope = host.Services.CreateScope())
 {
     var init = scope.ServiceProvider.GetRequiredService<DbInitializer>();
@@ -67,10 +67,3 @@ using (var scope = host.Services.CreateScope())
 }
 
 await host.RunAsync();
-
-// --- Options type
-public class IngestionOptions
-{
-    public int BatchSize { get; set; }
-    public int MaxLength { get; set; }
-}
