@@ -1,0 +1,17 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "TimerSchedule": "0 */5 * * * *",
+
+    "Ingestion:BatchSize": "10",
+
+    "Providers:ChuckNorris:BaseUrl": "https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/",
+    "Providers:ChuckNorris:CountEndpoint": "jokes/random",
+    "Providers:ChuckNorris:ApiHost": "matchilling-chuck-norris-jokes-v1.p.rapidapi.com",
+    "Providers:ChuckNorris:ApiKey": "9b98620879msh3fc0af0feb16060p18ffb3jsn1a3b10d92b06",
+
+    "ConnectionStrings:Sqlite": "Data Source=jokes.db"
+  }
+}
